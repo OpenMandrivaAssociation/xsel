@@ -1,7 +1,7 @@
 Summary:	Command line clipboard and X selection tool
 Name:		xsel
 Version:	1.2.0
-Release:	1
+Release:	2
 License:	MIT
 Group:		System/X11
 Url:		http://www.vergenet.net/~conrad/software/xsel/
