@@ -4,13 +4,14 @@ Version:	1.2.1
 Release:	1
 License:	MIT
 Group:		System/X11
-Url:		http://www.vergenet.net/~conrad/software/xsel/
-Source0:	http://www.vergenet.net/~conrad/software/xsel/download/xsel-%{version}.tar.gz
+Url:		http://www.kfish.org/software/xsel/
+Source0:	https://github.com/kfish/xsel/archive/refs/tags/%{version}.tar.gz
 # Applied upstream (BZ#690214)
 Patch0:		xsel-1.2.0-MAX_NUM_TARGETS.patch
 BuildRequires:	pkgconfig(sm)
 BuildRequires:	pkgconfig(xext)
 BuildRequires:	pkgconfig(xt)
+BuildRequires:  pkgconfig(x11)
 
 %description
 XSel is a command line or script utility, similar to xclip, that can copy the
@@ -26,15 +27,12 @@ you would paste with the middle mouse button.
 #----------------------------------------------------------------------------
 
 %prep
-%setup -q
+%autosetup -p1
 %patch0 -p1 -b .MAX_NUM_TARGETS
 
 %build
-%configure2_5x
-%make
+%configure
+%make_build
 
 %install
-%makeinstall_std
-
-
-
+%make_install
