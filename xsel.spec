@@ -5,7 +5,7 @@ Release:	1
 License:	MIT
 Group:		System/X11
 Url:		http://www.kfish.org/software/xsel/
-Source0:	https://github.com/kfish/xsel/archive/refs/tags/%{version}.tar.gz
+Source0:	https://github.com/kfish/xsel/archive/refs/tags/%{version}/%{name}-%{version}.tar.gz
 # Applied upstream (BZ#690214)
 Patch0:		xsel-1.2.0-MAX_NUM_TARGETS.patch
 BuildRequires:	pkgconfig(sm)
