@@ -6,8 +6,7 @@ License:	MIT
 Group:		System/X11
 Url:		http://www.kfish.org/software/xsel/
 Source0:	https://github.com/kfish/xsel/archive/refs/tags/%{version}/%{name}-%{version}.tar.gz
-# Applied upstream (BZ#690214)
-Patch0:		xsel-1.2.0-MAX_NUM_TARGETS.patch
+
 BuildRequires:	pkgconfig(sm)
 BuildRequires:	pkgconfig(xext)
 BuildRequires:	pkgconfig(xt)
@@ -28,7 +27,6 @@ you would paste with the middle mouse button.
 
 %prep
 %autosetup -p1
-%patch0 -p1 -b .MAX_NUM_TARGETS
 
 %build
 %configure
