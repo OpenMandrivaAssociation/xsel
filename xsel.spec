@@ -4,7 +4,7 @@ Version:	1.2.1
 Release:	1
 License:	MIT
 Group:		System/X11
-Url:		http://www.kfish.org/software/xsel/
+Url:		https://www.kfish.org/software/xsel/
 Source0:	https://github.com/kfish/xsel/archive/refs/tags/%{version}/%{name}-%{version}.tar.gz
 
 BuildRequires:	pkgconfig(sm)
