@@ -7,6 +7,11 @@ Group:		System/X11
 Url:		https://www.kfish.org/software/xsel/
 Source0:	https://github.com/kfish/xsel/archive/refs/tags/%{version}/%{name}-%{version}.tar.gz
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	pkgconfig(sm)
 BuildRequires:	pkgconfig(xext)
 BuildRequires:	pkgconfig(xt)
